@@ -599,6 +599,10 @@ fill: var(--color-primary-dark);
         line-height: 1.17;
 }
 
+.buttons{
+    display: none;
+}
+
 /*Form*/
 .form-field {
     margin-bottom: 24px;
