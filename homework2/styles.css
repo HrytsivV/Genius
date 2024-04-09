@@ -454,6 +454,11 @@ width: 343px;
     margin: 16px;
     left: -20px;
 }
+.blue-span{
+    color: var(--color-primary-light);
+    font-size: 22px;
+        line-height: 1.17;
+}
 /*Carousel*/
 
 .carousel-button{
