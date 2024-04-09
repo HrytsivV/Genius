@@ -382,6 +382,14 @@ width: 343px;
     text-align: center;
     color: var(--color-thirdth);
 }
+.agift-title{
+font-family: 'Roboto';
+    font-weight: 400;
+font-size: 16px;
+    line-height: 1.12;
+text-align: center;
+    color: var(--color-thirdth);
+}
 
 .local-container{
     display: flex;
