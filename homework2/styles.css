@@ -350,45 +350,6 @@ width: 343px;
         height: 695px;
 }
 
-.star-one{
-    position: relative;
-    top: -360px;
-    left: 130px;
-    width: 64px;
-        height: 64px;
-        animation-name: spin;
-            animation-duration: 10s;
-            animation-iteration-count: 5;
-    }
-.color-one{
-fill: var(--color-primary-dark);
-}
-
-.star-two{
-    position: relative;
-        top: -750px;
-        left: 490px;
-        width: 40px;
-        height: 40px;
-        animation-name: spin;
-            animation-duration: 10s;
-            animation-iteration-count: 5;
-}
-.color-two{
-fill: var(--color-primary-light);
-}
-
-.star-three{
-    position: relative;
-        top: -540px;
-        left: 490px;
-        width: 40px;
-        height: 40px;
-        animation-name: spin;
-            animation-duration: 10s;
-            animation-iteration-count: 5;
-}
-
 /*Mapa*/
 .location-container {
     display: flex;
