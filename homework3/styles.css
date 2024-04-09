@@ -600,6 +600,12 @@ fill: var(--color-primary-dark);
 }
 
 .buttons{
+ position: absolute;
+    top: 30px;
+    right: 30px;
+    fill: var(--color-thirdth);
+    background-color: var(--color-primary-dark);
+    border: none;
     display: none;
 }
 
