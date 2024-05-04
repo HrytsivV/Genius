@@ -23,11 +23,19 @@
     position: absolute;
     width: 723px;
     height: 681px;
-    padding: 20px;
+    padding: 50px 70px;
     background-color: var(--color-primary-dark);
     border-radius: 48px;
     padding-top: 40px;
     overflow-y: auto;
+
+    @media screen and (min-width: $bp-tablet) {
+            padding: 30px 30px; 
+        }
+    
+@media screen and (min-width: $bp-desktop) {
+            padding: 20px 20px; 
+        }
     
 
 &__form {
