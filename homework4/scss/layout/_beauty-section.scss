@@ -1,0 +1,117 @@
+ .beauty-section{
+&__container {
+display: flex;
+align-items: flex-start;
+    gap: 40px;
+    
+}
+
+&__content {
+    gap: 40px;
+    max-width: 710px;
+    font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.17;
+        
+
+    @media screen and (min-width: $bp-tablet) {
+            font-size: 22px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+}
+
+
+
+&__photo {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+        display: block;
+           height: 695px;
+            position: relative;
+    width: 499px;
+        }
+                 @media screen and (min-width: $bp-desktop) {
+                     height: 695px;
+                     position: relative;
+                     width: 499px;
+                 }
+
+}
+
+ &__atitle {
+    position: relative;
+    width: 343px;
+    height: 328px;
+    left: 175px;
+    border-radius: 100%;
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+            display: block;
+        }
+}
+ &__title {
+    position: relative;
+    width: 327px;
+    height: 327px;
+    border-radius: 100%;
+    top: -40px;
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+            display: block;
+        }
+}
+ }
+
+ .star-block {
+
+     &__star {
+         position: relative;
+         top: -360px;
+         left: 10px;
+         width: 64px;
+         height: 64px;
+         animation-name: spin;
+         animation-duration: 10s;
+         animation-iteration-count: 5;
+     }
+
+     &__one {
+         fill: var(--color-primary-dark);
+     }
+
+     &__stars {
+         position: relative;
+         top: -750px;
+         left: 490px;
+         width: 40px;
+         height: 40px;
+         animation-name: spin;
+         animation-duration: 10s;
+         animation-iteration-count: 5;
+     }
+
+     &__two {
+         fill: var(--color-primary-light);
+     }
+
+     &__astar {
+         position: relative;
+         top: -540px;
+         left: 490px;
+         width: 40px;
+         height: 40px;
+         animation-name: spin;
+         animation-duration: 10s;
+         animation-iteration-count: 5;
+     }
+
+ }
+
+
+
+
+
+
