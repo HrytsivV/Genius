@@ -4,10 +4,20 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+   max-width: 100%;
+   
 
     @media screen and (min-resolution: 192dpi){
         background-image: url(./image/main-background@2x.png);
         }
+
+                @media screen and (min-width: $bp-tablet) {
+                background-size: auto;
+                }
+
+                  @media screen and (min-width: $bp-desktop) {
+                      background-size: auto;
+                  }
 
 
     &__container {
@@ -52,7 +62,7 @@
 &__atitle {
     display: block;
     max-width: 520px;
-    margin: 0 auto 40px;
+    margin: 0;
 
     @media screen and (max-width: $bp-tablet) {
             margin: 0 auto 32px;
@@ -80,9 +90,3 @@
 }
 
 }
-
-
-
-
-
-
