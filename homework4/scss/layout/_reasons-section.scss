@@ -1,0 +1,104 @@
+.reasons-section {
+    height: 670px;
+    @media screen and (min-width: $bp-tablet) {
+    height: 630px;
+    }
+        
+
+    &__block{
+        display: flex;
+        flex-wrap: wrap;
+       margin: 20px;
+       align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: block;
+             position: relative;
+    transform: translate(0, 20%);
+    margin-bottom: 50px;
+        }
+
+                @media screen and (min-width: $bp-desktop) {
+                    display: block;
+                    position: relative;
+                    transform: translate(15%, 20%);
+                    margin-bottom: 50px;
+                }
+
+}
+&__container {
+    display: flex;
+    flex-wrap: wrap;
+   gap: 16px;
+    justify-content: center;
+    flex-grow: 1;
+
+    @media screen and (min-width: $bp-tablet) {
+             gap: 32px;
+        }
+    
+}
+
+&__background {
+    height: 750px;
+    display: flex;
+   flex-wrap: wrap; 
+            background-image: url(./Image/background.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    
+    transform: translate(0%, -10%);
+    @media screen and (min-width: $bp-tablet) {
+    transform: translate(0%, -15%); 
+    position: absolute;
+}
+@media screen and (min-width: $bp-desktop) {
+    position: relative;
+     background-size: cover;
+    transform: translate(0%, -15%);
+}
+ @media screen and (min-resolution: 192dpi) {
+     background-image: url(./imagi/background@2xx.jpg);
+ }
+}
+
+&__name{
+    
+    @media screen and (max-width: $bp-tablet){
+    margin: 0 auto;
+}
+}
+
+}
+
+.format-container {
+    height: 181px;
+    width: 316px;
+    border-radius: 32px;
+    background-color: var(--color-thirdth);
+    box-shadow: 0px 3px 3px 1px rgba(168, 198, 245, 0.38);
+
+&__card {
+    position: relative;
+    width: 252px;
+    height: 133px;
+    top: 24px;
+    left: 32px;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+&__title {
+    margin: 0;
+    
+} &__icon {
+    fill: var(--color-primary-light);
+}
+}
+
+
+
