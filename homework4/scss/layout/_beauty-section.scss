@@ -41,6 +41,7 @@ align-items: flex-start;
 }
 
  &__atitle {
+    top: -30px;
     position: relative;
     width: 343px;
     height: 328px;
@@ -53,6 +54,7 @@ align-items: flex-start;
         }
 }
  &__title {
+    right: 40px;
     position: relative;
     width: 327px;
     height: 327px;
