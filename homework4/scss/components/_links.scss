@@ -1,0 +1,16 @@
+.link {
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    line-height: 1.17;
+    
+    &:hover {
+    color: var(--color-primary-light);
+    font-weight: 700;
+}
+}
+
+
+
+.link.accent {
+    color: var(--color-primary-dark);
+}
