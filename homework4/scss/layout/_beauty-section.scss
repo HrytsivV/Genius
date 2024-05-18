@@ -8,18 +8,25 @@ align-items: flex-start;
 
 &__content {
     gap: 40px;
-    max-width: 710px;
     font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 1.17;
+        width: 710px;
         
 
     @media screen and (min-width: $bp-tablet) {
             font-size: 22px;
             line-height: 1.7;
             margin-bottom: 20px;
+            width: 710px;
         }
+                 @media screen and (min-width: $bp-desktop) {
+                     font-size: 22px; 
+                     max-width: 710px;
+                     line-height: 1.7;
+                     margin-bottom: 20px;
+                 }
 }
 
 
@@ -41,43 +48,78 @@ align-items: flex-start;
 }
 
  &__atitle {
-    top: -30px;
-    position: relative;
-    width: 343px;
-    height: 328px;
-    left: 175px;
-    border-radius: 100%;
     display: none;
 
     @media screen and (min-width: $bp-tablet) {
             display: block;
+            top: 20px;
+            position: relative;
+    border-radius: 100%;
+            width: 243px;
+                height: 228px;
+                left: 150px;
         }
+
+                @media screen and (min-width: $bp-desktop) {
+                    display: block;
+                    top: -30px;
+                    position: relative;
+                    border-radius: 100%;
+                    width: 343px;
+                    height: 328px;
+                    left: 275px;
+                }
+
 }
  &__title {
-    right: 40px;
-    position: relative;
-    width: 327px;
-    height: 327px;
-    border-radius: 100%;
-    top: -40px;
     display: none;
+    
     @media screen and (min-width: $bp-tablet) {
             display: block;
+    width: 227px;
+    height: 227px;
+    border-radius: 100%;
+        border-radius: 100%;
+        top: -10px;
+        position: relative;
+            
         }
+                 @media screen and (min-width: $bp-desktop) {
+                     display: block;
+                     right: -20px;
+                     width: 327px;
+                     height: 327px;
+                     border-radius: 100%;
+                     border-radius: 100%;
+                     top: -20px;
+                     position: relative;
+        
+                 }
 }
  }
 
  .star-block {
+    position: absolute;
 
      &__star {
-         position: relative;
-         top: -360px;
-         left: 10px;
-         width: 64px;
-         height: 64px;
+        display: none;
          animation-name: spin;
          animation-duration: 10s;
          animation-iteration-count: 5;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+                position: relative;
+         top: 255px;
+         left: 680px;
+            }
+                        @media screen and (min-width: $bp-desktop) {
+                            position: relative;
+                            top: 350px;
+                            left: 850px;
+                            width: 64px;
+                            height: 64px;
+                        }
      }
 
      &__one {
@@ -85,14 +127,23 @@ align-items: flex-start;
      }
 
      &__stars {
-         position: relative;
-         top: -750px;
-         left: 490px;
-         width: 40px;
-         height: 40px;
+        top: 245px;
+        left: 350px;
+        position: relative;
          animation-name: spin;
          animation-duration: 10s;
          animation-iteration-count: 5;
+
+        @media screen and (min-width: $bp-tablet) {
+         top: -50px;
+         left: 950px;
+            }
+                        @media screen and (min-width: $bp-desktop) {
+                           top: -50px;
+            left: 1200px;
+            width: 40px;
+            height: 40px;
+                        }
      }
 
      &__two {
@@ -100,14 +151,23 @@ align-items: flex-start;
      }
 
      &__astar {
+        display: none;
          position: relative;
-         top: -540px;
-         left: 490px;
-         width: 40px;
-         height: 40px;
          animation-name: spin;
          animation-duration: 10s;
          animation-iteration-count: 5;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+                top: 60px;
+                    left: 900px;
+            }
+                        @media screen and (min-width: $bp-desktop) {
+                            top: 110px;
+                            left: 1150px;
+                            width: 40px;
+         height: 40px;
+                        }
      }
 
  }
