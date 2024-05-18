@@ -43,7 +43,7 @@
     height: 750px;
     display: flex;
    flex-wrap: wrap; 
-            background-image: url(./Image/background.jpg);
+            background-image: url(./image/background.jpg);
     position: absolute;
     background-repeat: no-repeat;
     
@@ -57,9 +57,7 @@
      background-size: cover;
     transform: translate(0%, -15%);
 }
- @media screen and (min-resolution: 192dpi) {
-     background-image: url(./imagi/background@2xx.jpg);
- }
+
 }
 
 &__name{
