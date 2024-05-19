@@ -1,177 +1,94 @@
- .beauty-section{
+.location-section{
 &__container {
-display: flex;
-align-items: flex-start;
-    gap: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+    @media screen and (max-width: $bp-tablet) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 24px;
+        }
+
+}
+&__formed{
+    display: flex;
+        gap: 24px;
+        flex-direction: column;
     
-}
-
-&__content {
-    gap: 40px;
-    font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.17;
-        width: 710px;
-        
-
-    @media screen and (min-width: $bp-tablet) {
-            font-size: 22px;
-            line-height: 1.7;
-            margin-bottom: 20px;
-            width: 710px;
-        }
-                 @media screen and (min-width: $bp-desktop) {
-                     font-size: 22px; 
-                     max-width: 710px;
-                     line-height: 1.7;
-                     margin-bottom: 20px;
-                 }
-}
-
-
-
-&__photo {
-    display: none;
-    @media screen and (min-width: $bp-tablet) {
-        display: block;
-           height: 695px;
-            position: relative;
-    width: 499px;
-        }
-                 @media screen and (min-width: $bp-desktop) {
-                     height: 695px;
-                     position: relative;
-                     width: 499px;
-                 }
-
-}
-
- &__atitle {
-    display: none;
-
-    @media screen and (min-width: $bp-tablet) {
-            display: block;
-            top: 20px;
-            position: relative;
-    border-radius: 100%;
-            width: 243px;
-                height: 228px;
-                left: 150px;
-        }
-
-                @media screen and (min-width: $bp-desktop) {
-                    display: block;
-                    top: -30px;
-                    position: relative;
-                    border-radius: 100%;
-                    width: 343px;
-                    height: 328px;
-                    left: 275px;
-                }
-
-}
- &__title {
-    display: none;
-    
-    @media screen and (min-width: $bp-tablet) {
-            display: block;
-    width: 227px;
-    height: 227px;
-    border-radius: 100%;
-        border-radius: 100%;
-        top: -10px;
-        position: relative;
+        @media screen and (min-width: $bp-tablet) {
             
+            gap: 32px;
         }
-                 @media screen and (min-width: $bp-desktop) {
-                     display: block;
-                     right: -20px;
-                     width: 327px;
-                     height: 327px;
-                     border-radius: 100%;
-                     border-radius: 100%;
-                     top: -20px;
-                     position: relative;
-        
-                 }
 }
- }
+&__box {
+    
+ flex-direction: column;
+    @media screen and (min-width: $bp-tablet) {
+           display: flex;
+    justify-content: center;
+    gap: 32px;
+        }
 
- .star-block {
-    position: absolute;
+}
 
-     &__star {
-        display: none;
-         animation-name: spin;
-         animation-duration: 10s;
-         animation-iteration-count: 5;
-
-        @media screen and (min-width: $bp-tablet) {
-            display: block;
-                position: relative;
-         top: 255px;
-         left: 680px;
+&__map {
+            flex-shrink: 0;
+            height: 176px;
+            width: 430px;
+            margin: 0 -24px;
+            border-radius: 16px;
+            border: none;
+    
+            @media screen and (min-width: $bp-tablet) {
+                margin: auto;
+                width: 500px;
+                height: 450px;
             }
-                        @media screen and (min-width: $bp-desktop) {
-                            position: relative;
-                            top: 350px;
-                            left: 850px;
-                            width: 64px;
-                            height: 64px;
-                        }
-     }
-
-     &__one {
-         fill: var(--color-primary-dark);
-     }
-
-     &__stars {
-        top: 245px;
-        left: 350px;
-        position: relative;
-         animation-name: spin;
-         animation-duration: 10s;
-         animation-iteration-count: 5;
-
-        @media screen and (min-width: $bp-tablet) {
-         top: -50px;
-         left: 950px;
+    
+            @media screen and (min-width: $bp-desktop) {
+                width: 605px;
+                height: 481px;
             }
-                        @media screen and (min-width: $bp-desktop) {
-                           top: -50px;
-            left: 1200px;
-            width: 40px;
-            height: 40px;
-                        }
-     }
+        }
+    
 
-     &__two {
-         fill: var(--color-primary-light);
-     }
+&__boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-dark);
+    border-radius: 32px 32px;
+    width: 380px;
+    height: 440px;
 
-     &__astar {
-        display: none;
-         position: relative;
-         animation-name: spin;
-         animation-duration: 10s;
-         animation-iteration-count: 5;
+    @media screen and (min-width: $bp-tablet) {
+           width: 423px;
+    height: 481px;
+        }
+    
+}
+&__title {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--color-thirdth); 
+   
+}
+ &__span{
+    color: var(--color-primary-light);
+}
 
-        @media screen and (min-width: $bp-tablet) {
-            display: block;
-                top: 60px;
-                    left: 900px;
-            }
-                        @media screen and (min-width: $bp-desktop) {
-                            top: 110px;
-                            left: 1150px;
-                            width: 40px;
-         height: 40px;
-                        }
-     }
-
- }
-
+&__modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
 
 
 
