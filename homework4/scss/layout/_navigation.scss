@@ -35,14 +35,15 @@
 &__map {
             flex-shrink: 0;
             height: 176px;
+            width: 430px;
             margin: 0 -24px;
             border-radius: 16px;
             border: none;
     
             @media screen and (min-width: $bp-tablet) {
                 margin: auto;
-                width: 320px;
-                height: 400px;
+                width: 500px;
+                height: 450px;
             }
     
             @media screen and (min-width: $bp-desktop) {
@@ -59,8 +60,13 @@
     justify-content: center;
     background-color: var(--color-primary-dark);
     border-radius: 32px 32px;
-    width: 423px;
+    width: 380px;
+    height: 440px;
+
+    @media screen and (min-width: $bp-tablet) {
+           width: 423px;
     height: 481px;
+        }
     
 }
 &__title {
